@@ -10,11 +10,13 @@ on:
 
 jobs:
   build:
-  runs-on: ubuntu-latest
   timeout-minutes: 30
   steps:
     - uses: actions/checkout@v3
 
     - name: test
       run: echo "hello world"
+
+    - name: get system
+      run: uname
 
